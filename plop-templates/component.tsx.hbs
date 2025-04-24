@@ -1,0 +1,11 @@
+import { type {{pascalCase name}}Props } from "./types";
+import * as S from "./styles.tsx";
+
+export const {{pascalCase name}} = ({ componentName }: {{pascalCase name}}Props) => {
+  return (
+    <S.Container>
+      <h2>Component {componentName}</h2>
+      <S.PrimaryButton>Primary Button</S.PrimaryButton>
+    </S.Container>
+  );
+};
