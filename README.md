@@ -17,3 +17,9 @@ yarn plop generate component
 - [ ] eslint e prettier
 - [ ] Redux
 - [ ] Playwright
+
+
+
+## Documentação para utilizar  Yarn Plug'n'Play no VSCode
+https://yarnpkg.com/getting-started/editor-sdks#vscode
+
