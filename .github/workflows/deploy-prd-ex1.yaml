@@ -1,0 +1,25 @@
+name: Deploy Vite → S3 + CloudFront
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Release static site
+    uses: stone-payments/github-actions-workflows/.github/workflows/front-end-static-cd.yml@front-end-v3
+    with:
+      analitica-enabled: false
+      node-version: .nvmrc
+      aws-region: us-east-1
+      aws-s3-bucket: inside-sales-plugin-cdn-prd-183a03a6
+      source-dir: dist
+      paths: "/*"
+      distribution-id: E27KDJOI107BNP
+      build-command: build
+    secrets:
+      NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      CUSTOM_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}

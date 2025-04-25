@@ -1,0 +1,13 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  namespace: to-be-defined
+  name: inside-sales-plugin
+  title: Inside Sales Plugin
+  description: plugin de inside sales na one
+  annotations:
+    legacy.stone.tech/owner-email: rafael.ibrandao@stone.com.br
+spec:
+  type: service
+  lifecycle: experimental
+  owner: stone-payments/one-inside-sales

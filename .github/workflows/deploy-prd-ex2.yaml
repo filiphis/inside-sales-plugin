@@ -1,0 +1,33 @@
+name: Deploy Vite → S3 - ex2
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4      # necessário para copiar o repo
+
+    # (Se precisar buildar aqui, inclua setup-node + npm ci + npm run build)
+
+    - name: Deploy to S3 AWS
+      uses: stone-payments/github-actions-workflows/.github/actions/deploy-aws-s3@front-end-v3
+      with:
+        AWS_REGION: us-east-1
+        AWS_S3_BUCKET: inside-sales-plugin-cdn-prd-183a03a6
+        SOURCE_DIR: dist
+        DEST_DIR: / 
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+
+    - name: Invalidate CloudFront Cache
+      uses: stone-payments/github-actions-workflows/.github/actions/invalidate-cloudfront-cache@front-end-v3
+      with:
+        AWS_REGION: us-east-1
+        PATHS: '/*'
+        DISTRIBUTION_ID: E27KDJOI107BNP
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
