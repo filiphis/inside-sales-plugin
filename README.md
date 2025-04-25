@@ -21,8 +21,8 @@ yarn plop generate component
 - [x] Plop
 - [x] husky e pre-commit
 - [x] eslint
-- [ ] Redux
-- [ ] Playwright
+- [x] Redux Toolkit
+- [x] Playwright
 
 
 
