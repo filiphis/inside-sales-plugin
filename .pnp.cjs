@@ -39,6 +39,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-hooks", "virtual:233fe4f00167466e4741c52589b024ca0cf2beb82ab0ecfe97cee2cdd98142c2e1a582149c3da6c032a43470ff88859cc2af2bc2f9fc1ca1dd21652eabb0f454#npm:5.2.0"],\
           ["eslint-plugin-react-refresh", "virtual:233fe4f00167466e4741c52589b024ca0cf2beb82ab0ecfe97cee2cdd98142c2e1a582149c3da6c032a43470ff88859cc2af2bc2f9fc1ca1dd21652eabb0f454#npm:0.4.20"],\
           ["globals", "npm:16.0.0"],\
+          ["husky", "npm:9.1.7"],\
           ["inside-sales-plugin", "workspace:."],\
           ["plop", "npm:4.0.1"],\
           ["react", "npm:19.1.0"],\
@@ -3157,6 +3158,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["husky", [\
+      ["npm:9.1.7", {\
+        "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/husky-npm-9.1.7-5b02eaabc4-10c0.zip/node_modules/husky/",\
+        "packageDependencies": [\
+          ["husky", "npm:9.1.7"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["iconv-lite", [\
       ["npm:0.4.24", {\
         "packageLocation": "../../../AppData/Local/Yarn/Berry/cache/iconv-lite-npm-0.4.24-c5c4ac6695-10c0.zip/node_modules/iconv-lite/",\
@@ -3287,6 +3297,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-plugin-react-hooks", "virtual:233fe4f00167466e4741c52589b024ca0cf2beb82ab0ecfe97cee2cdd98142c2e1a582149c3da6c032a43470ff88859cc2af2bc2f9fc1ca1dd21652eabb0f454#npm:5.2.0"],\
           ["eslint-plugin-react-refresh", "virtual:233fe4f00167466e4741c52589b024ca0cf2beb82ab0ecfe97cee2cdd98142c2e1a582149c3da6c032a43470ff88859cc2af2bc2f9fc1ca1dd21652eabb0f454#npm:0.4.20"],\
           ["globals", "npm:16.0.0"],\
+          ["husky", "npm:9.1.7"],\
           ["inside-sales-plugin", "workspace:."],\
           ["plop", "npm:4.0.1"],\
           ["react", "npm:19.1.0"],\

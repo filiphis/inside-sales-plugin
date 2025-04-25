@@ -1,8 +1,11 @@
 function App() {
+  const varTeste = "teste";
+  const varTest2 = "teste";
   return (
     <>
       <div>
         <h1>Teste</h1>
+        <h1>{varTeste}</h1>
       </div>
     </>
   );
