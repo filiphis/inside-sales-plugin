@@ -1,6 +1,5 @@
 function App() {
   const varTeste = "teste";
-  const varTest2 = "teste";
   return (
     <>
       <div>
